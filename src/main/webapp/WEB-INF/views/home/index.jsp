@@ -5,7 +5,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <head>
 <meta charset="UTF-8" />
-<title>Listagem de Despesas</title>
+<title>Pagina principal</title>
 <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
@@ -16,12 +16,14 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<div class="clearfix">
-				<h1 class="panel-title impacta-titulo-panel">Listagem de Despesas</h1>
-				<a class="btn btn-link impacta-link-panel" href="/usuario">Usuario</a><br>
-				<a class="btn btn-link impacta-link-panel" href="/cadastrodespesa">Nova Despesa</a><br>
-				<a class="btn btn-link impacta-link-panel" href="/listagem">Listagem Despesa</a><br>
+				<h1 class="panel-title impacta-titulo-panel"><b>Página principal</b></h1><br><br>
+				<a class="col-sm-2" href="/usuario">Usúario</a><br><br>
+				<a class="col-sm-2" href="/cadastrodespesa">Nova Despesa</a><br><br>
+				<a class="col-sm-2" href="/listagem">Listagem de Despesas</a><br><br>
 			</div>
 		</div>
+
+
 
 		<div class="panel-body">
 
