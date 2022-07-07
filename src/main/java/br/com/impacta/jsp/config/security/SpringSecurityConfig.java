@@ -19,13 +19,13 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         // somente para liberar o acesso ao H2-CONSOLE
-        http
+ /*       http
                 .csrf().disable()
                 .headers().frameOptions().sameOrigin()
                 .and()
                 .authorizeRequests()
                 .antMatchers("/h2-console/**")
-                .permitAll();
+                .permitAll(); */
         //  configuração de segurança da aplicação
         http
                 .authorizeRequests()

@@ -7,15 +7,15 @@
 <head>
 <meta charset="UTF-8" />
 <title>Cadastro de Despesa</title>
-<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
-<link rel="stylesheet" type="text/css" href="/css/Datepicker.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Datepicker.css" />
 </head>
 
 <body>
 	<nav class="navbar navbar-inverse navbar-static-top"></nav>
 
-	<spring:form class="form-horizontal" method="POST" action="/cadastrodespesa"	modelAttribute="despesa">
+	<spring:form class="form-horizontal" method="POST" action="${pageContext.request.contextPath}/cadastrodespesa"	modelAttribute="despesa">
 
 		<c:if test="${!empty mensagem}">
 			<div class="alert alert-success">
@@ -93,12 +93,12 @@
 		</div>
 	</spring:form>
 
-	<script src="/js/jquery-3.1.1.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/jquery.maskMoney.min.js"></script>
-	<script src="/js/despesa.js"></script>
-	<script src="/js/Datepicker.js"></script>
-	<script src="/js/Datepicker.pt-BR.min.js"></script>
+	<script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
+	<script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+	<script src="${pageContext.request.contextPath}/js/jquery.maskMoney.min.js"></script>
+	<script src="${pageContext.request.contextPath}/js/despesa.js"></script>
+	<script src="${pageContext.request.contextPath}/js/Datepicker.js"></script>
+	<script src="${pageContext.request.contextPath}/js/Datepicker.pt-BR.min.js"></script>
 </body>
 </html>
 

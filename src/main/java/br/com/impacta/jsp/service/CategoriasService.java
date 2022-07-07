@@ -17,16 +17,21 @@ public class CategoriasService {
   public List<String> getListName(){
     //codigo , nome
     List<String> novaList = new ArrayList<>();
-      categoriasRepository
-        .findAll()
-        .stream()
-        .forEach(categorias ->{
-          novaList.add(categorias.getName());
-        });
+    categoriasRepository
+            .findAll()
+            .stream()
+            .forEach(categorias ->{
+              novaList.add(categorias.getName());
+            });
     return novaList;
   }
 
   public List<Categorias> getListAll(){
     return categoriasRepository.findAll();
+  }
+
+
+  public Categorias salvar(Categorias categorias){
+    return categoriasRepository.save(categorias);
   }
 }
